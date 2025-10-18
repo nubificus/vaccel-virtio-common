@@ -1,0 +1,17 @@
+install_manifest.txt
+compile_commands.json
+_deps
+**/.*.swp
+**/*.so
+**/*.a
+.clangd
+cscope.out
+/build*
+/subprojects/*
+!/subprojects/*.wrap
+!/subprojects/packagefiles
+/*-artifacts
+
+.cache
+.ccls-cache
+.vscode
