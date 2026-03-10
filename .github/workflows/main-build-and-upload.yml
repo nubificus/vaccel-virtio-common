@@ -1,0 +1,16 @@
+name: Build and Upload
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  update-release:
+    name: Update Release
+    uses: nubificus/vaccel/.github/workflows/update-release.yml@main
+    secrets: inherit
