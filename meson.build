@@ -14,7 +14,7 @@ plugin_cargs = ['-Wall','-Wextra', '-Wno-unused', '-Werror']
 
 lib_version = meson.project_version().split('-')[0]
 
-libvaccel_dep = dependency('vaccel', version : '>=0.7.0')
+libvaccel_dep = dependency('vaccel', version : '>=0.8.0')
 
 subdir('include')
 subdir('src')
